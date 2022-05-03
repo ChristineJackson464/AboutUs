@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300&family=Comfortaa:wght@400;700&family=Just+Another+Hand&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6f42c1;
+    font-family: 'Big Shoulders Display', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 5px;
+}
+
+
+header #logo {
+    margin-left: 35px;
+    margin-top: 50px;;
+    font-size: 50px;
+    color: #fff;
+    line-height: 45px;
+    letter-spacing: -.5px;
+}
+
+/* NAVBAR */
+
+/* Showcase */
+#showcase {
+    margin: 20px;
+    margin-top: 100px;
+    width: 90%;
+    padding: 5px;
+    backdrop-filter: blur(1, 2);
+}
+
+.show-container {
+    background:inherit;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 0;
+    border-radius: 10px;
+    padding: 5px 12px 20px 10px;
+    overflow: hidden;
+    z-index: 1;
+ }
+
+ .show-container:before {
+    content: '';
+    background:inherit;
+    position: absolute;
+    margin: -20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 1500px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    z-index: -1;
+}
+
+ /* flip the gradient opacity */
+.show-container p {
+    background: radial-gradient(circle, rgba(111,66,193,0.0980392156862745) 100%, rgba(102,16,242,0.6274509803921569) 0%);
+    background: blur;
+    margin-bottom: 3px;
+    border-radius: 15px;
+    padding: 10px 15px;
+    color:rgb(194, 180, 194);
+    font-size: .75rem
+}
