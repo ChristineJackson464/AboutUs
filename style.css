@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300&family=Comfortaa:wght@400;700&family=Just+Another+Hand&display=swap');
 
-* {
+ * {
     box-sizing: border-box;
-}
+} 
+
 
 body {
     background-color: #6f42c1;
@@ -10,27 +11,40 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 85vh;
     margin: 0;
     padding: 5px;
 }
 
-
-header #logo {
-    margin-left: 35px;
-    margin-top: 50px;;
-    font-size: 50px;
-    color: #fff;
-    line-height: 45px;
-    letter-spacing: -.5px;
+/* LOGO */
+header {
+    background-color: rgb(199, 188, 199);
+    position:absolute;
+    top: 0;
+    width: 100vw;
+    height: 15vh;
+    
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+    z-index: -1;
 }
+
+header img {
+    padding: 0;
+    position: flex;
+    height: 150px;
+    width: 150px;
+    margin: 0px;
+    z-index: 2;
+    opacity: 2;
+}
+
 
 /* NAVBAR */
 
 /* Showcase */
 #showcase {
     margin: 20px;
-    margin-top: 100px;
+    margin-top: 400px;
     width: 90%;
     padding: 5px;
     backdrop-filter: blur(1, 2);
@@ -42,7 +56,7 @@ header #logo {
     position: relative;
     max-width: 90%;
     margin: auto;
-    margin-bottom: 0;
+    margin-bottom: 5px;
     border-radius: 10px;
     padding: 5px 12px 20px 10px;
     overflow: hidden;
@@ -63,13 +77,13 @@ header #logo {
     z-index: -1;
 }
 
- /* flip the gradient opacity */
+ 
 .show-container p {
     background: radial-gradient(circle, rgba(111,66,193,0.0980392156862745) 100%, rgba(102,16,242,0.6274509803921569) 0%);
     background: blur;
-    margin-bottom: 3px;
+    margin-bottom: 0;
     border-radius: 15px;
-    padding: 10px 15px;
+    padding: 5px 5px;
     color:rgb(194, 180, 194);
-    font-size: .75rem
+    font-size: 1.2rem
 }
