@@ -19,7 +19,7 @@ header {
     position:absolute;
     top: 0;
     width: 100vw;
-    height: 15vh;
+    height: 25vh;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
     z-index: -1;
 }
@@ -92,7 +92,7 @@ button:hover{
 /* Showcase */
 #showcase {
     margin: 20px;
-    margin-top: 900px;
+    margin-top: 220px;
     width: 90%;
     padding: 5px;
     backdrop-filter: blur(1, 2);
@@ -140,15 +140,24 @@ button:hover{
         padding: 0px 10px;
     }
 }
-/* @media screen and (max-width: 730px) {
+@media screen and (max-width: 730px) {
     .nav-links {
-        display: none;
+        display: column;
+        margin-bottom: 12px;
+        
     }
     header{
+        height: 16vh;
         display: block;
-        text-align: right;
+        text-align: center;
     }
-} */
+    button {
+        display: none;
+    }
+    .showcase {
+        margin-top: 375px;
+    }
+} 
 
 
 
