@@ -90,13 +90,14 @@ button:hover{
 }
 
 /* Showcase */
-#showcase {
+.container {
     margin: 20px;
-    margin-top: 220px;
+    margin-top: 1025px;
     width: 90%;
     padding: 5px;
     backdrop-filter: blur(1, 2);
-}
+} 
+
 .show-container {
     background:inherit;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
@@ -129,8 +130,30 @@ button:hover{
     border-radius: 15px;
     padding: 5px 5px;
     color:rgb(255, 255, 255);
-    font-size: 1.5rem
+    font-size: 1rem
 }
+
+#showcase1 {
+    border: 1px solid red;
+}
+
+#showcase2 img {
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    float: left; 
+    margin: 5px;
+}
+
+#showcase2 {
+    border: 1px solid blue;
+    text-align: justify;
+}
+
+#showcase3 {
+    border: 1px solid green;
+}
+
 
 @media screen and (max-width: 1080px) {
     .nav-links li{
