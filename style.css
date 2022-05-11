@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300&family=Comfortaa:wght@400;700&family=Just+Another+Hand&display=swap');
+
 * {
     box-sizing: border-box;
-}
+    padding: 0;
+    margin: 0;
+    }
+
 body {
     background-color: #6F42C1;
     font-family: 'Big Shoulders Display', cursive;
@@ -29,19 +33,11 @@ header img {
     height: 150px;
     width: 150px;
     margin: 0px;
+    margin-left: -2%;
     z-index: 2;
     opacity: 2;
 }
 /* NAVBAR */
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300&family=Comfortaa:wght@400;700&family=Just+Another+Hand&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: 0;
-}
-/* body{
-    background-color: #F3F1FF;
-} */
 li, a, button{
     font-family: 'Big Shoulders Display', cursive;
     text-transform: uppercase;
@@ -91,9 +87,10 @@ button:hover{
 
 /* Showcase */
 .container {
+    height: 75vh;
+    width: 90vw;
     margin: 20px;
-    margin-top: 1025px;
-    width: 90%;
+    margin-top: 230px;
     padding: 5px;
     backdrop-filter: blur(1, 2);
 } 
@@ -133,12 +130,7 @@ button:hover{
     font-size: 1rem
 }
 
-#showcase1 {
-    border: 1px solid red;
-}
-
 #showcase2 img {
-    color: #fff;
     width: 200px;
     height: 200px;
     float: left; 
@@ -146,12 +138,21 @@ button:hover{
 }
 
 #showcase2 {
-    border: 1px solid blue;
     text-align: justify;
+    color: #fff;
 }
 
-#showcase3 {
-    border: 1px solid green;
+@media screen and (max-width: 730px) {
+    .nav-links {
+        display: column;
+        margin-bottom: 12px;
+    }
+    
+    header{
+        height: 30vh;
+        display: block;
+        text-align: center;
+    }
 }
 
 
@@ -159,26 +160,8 @@ button:hover{
     .nav-links li{
         padding: 0px 10px;
     }
+
+    .container {
+        margin-top: 350px;
+    }
 }
-@media screen and (max-width: 730px) {
-    .nav-links {
-        display: column;
-        margin-bottom: 12px;
-        
-    }
-    header{
-        height: 16vh;
-        display: block;
-        text-align: center;
-    }
-    button {
-        display: none;
-    }
-    .showcase {
-        margin-top: 375px;
-    }
-} 
-
-
-
-
